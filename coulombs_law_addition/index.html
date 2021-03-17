@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Physics Aviary Coulombs Law</title>
+  <script src="script.js"></script>
+</head>
+<body>
+  <form name="form">
+    <label for="charge1">Initial Charge (μC)</label>
+    <input type="number" step="any" name="charge1" />
+    <br>
+    <label for="angle1">Initial Angle (°)</label>
+    <input type="number" step="any" name="angle1" />
+    <br>
+    <label for="force1">Initial Force (N)</label>
+    <input type="number" step="any" name="force1" />
+    <br><br>
+
+    <label for="charge2">Charge To Add (μC)</label>
+    <input type="number" step="any" name="charge2" />
+    <br>
+    <label for="xdist">X Distance (cm)</label>
+    <input type="number" step="any" name="xdist" />
+    <br>
+    <label for="ydist">Y Distance (cm)</label>
+    <input type="number" step="any" name="ydist" />
+  </form>
+  <button onclick="calculateForce()">Calculate</button>
+  <button onclick="moveLastOutput()">Move Answer to Inputs</button>
+  <p id="output"></p>
+</body>
+</html>
